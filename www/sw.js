@@ -1,5 +1,5 @@
 /* RPS Invoice — Service Worker (network-first for app, cache for offline) */
-const CACHE = 'rps-invoice-web-v5';
+const CACHE = 'rps-invoice-web-v6';
 
 const ASSETS = [
   './',

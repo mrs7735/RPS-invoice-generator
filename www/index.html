@@ -905,8 +905,6 @@ table.tt tfoot td:last-child{border-right:none;}
   <!-- ⑨ Footer -->
   <div class="fstrip">
     <div class="pan">Company's PAN : <strong contenteditable data-sid="pan">AABCR0000A</strong></div>
-    <div class="decl">Declaration: We declare that this invoice shows the actual price of the goods described and that all particulars are true and correct.</div>
-    <div class="cgi">This is a Computer Generated Invoice</div>
   </div>
 
   <!-- Action bar -->
@@ -1559,15 +1557,6 @@ if ('serviceWorker' in navigator) {
 </tr>
 </table>
 
-<!-- FOOTER -->
-<table style="width:100%;border:${BDR};border-top:0;background:#fdf0f7">
-<tr>
-  <td style="padding:5px 8px;font-size:8px;color:#666">
-    <b>Declaration:</b> We declare that this invoice shows the actual price of the goods described and that all particulars are true and correct.
-  </td>
-  <td style="padding:5px 8px;text-align:right;font-size:8px;color:#888;font-style:italic;white-space:nowrap">This is a Computer Generated Invoice</td>
-</tr>
-</table>
 
 </div></body></html>`;
   }
@@ -1799,15 +1788,7 @@ if ('serviceWorker' in navigator) {
       inner.push(sep());
 
       // Footer
-      inner.push({
-        columns:[
-          { width:'70%', stack:[
-            { text:"Company's PAN: "+(d.pan||'—'), bold:true, fontSize:8 },
-            { text:'Declaration: We declare that this invoice shows the actual price of the goods described and that all particulars are true and correct.', bold:true, fontSize:7, margin:[0,2,0,0] },
-          ] },
-          { width:'30%', text:'This is a Computer Generated Invoice', alignment:'right', bold:true, fontSize:7 },
-        ],
-      });
+      inner.push({ text:"Company's PAN: "+(d.pan||'—'), bold:true, fontSize:8 });
 
       const docDefinition = {
         pageSize: 'A4',
