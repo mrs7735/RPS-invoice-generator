@@ -1,0 +1,19 @@
+{
+  "name": "RPS Invoice — Tax Invoice Generator",
+  "short_name": "RPS Invoice",
+  "description": "GST Tax Invoice Generator for Rohith Pharma Solutions. Create, save and download professional invoices as PDF — works offline.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#EC1C8C",
+  "theme_color": "#EC1C8C",
+  "orientation": "any",
+  "icons": [
+    { "src": "assets/icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "assets/icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "assets/icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "maskable" },
+    { "src": "assets/icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ],
+  "categories": ["business", "finance", "productivity"],
+  "lang": "en-IN"
+}
